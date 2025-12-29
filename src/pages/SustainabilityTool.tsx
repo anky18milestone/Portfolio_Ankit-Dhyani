@@ -1,16 +1,19 @@
+import React from 'react';
 import { CaseStudyLayout } from '../components/CaseStudyLayout';
 import { CaseStudySection, ImageGrid, FullWidthImage } from '../components/CaseStudySection';
+const suspassHero = new URL('../assets/SustainabilityHero.webp', import.meta.url).href;
 
 export function SustainabilityTool() {
   return (
     <CaseStudyLayout
       title="Sustainability Procurement Assessment Tool"
-      tags={['UI/UX', 'SaaS']}
-      overview="A comprehensive platform that helps organizations assess, track, and improve their sustainable procurement practices, making environmental responsibility measurable and actionable."
+      tags={[]}
+      overview="Supplier Procurement Assessment Tool provides the ability to score and rank the suppliers based on their 
+      sustainability maturity and credentials after assessing them."
       role="UX/UI Designer"
-      duration="4 months"
-      tools={['Figma', 'Miro', 'Optimal Workshop', 'Principle']}
-      heroImage="https://images.unsplash.com/photo-1594080051162-74b97d619668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJpbGl0eSUyMGdyZWVuJTIwYnVzaW5lc3N8ZW58MXx8fHwxNzY1NzkxOTEyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      duration="2 months"
+      tools={['Adobe XD', 'Adobe Illustrator']}
+      heroImage={suspassHero}
       prevProject={{
         id: 'bridging-the-gaps',
         title: 'Bridging the Gaps: A Unified Hiring Experience',
@@ -20,14 +23,16 @@ export function SustainabilityTool() {
         title: 'Saathi - UMO Design Challenge',
       }}
     >
-      <CaseStudySection title="The Challenge">
+      <CaseStudySection title="Key Features">
         <p>
-          As companies increasingly commit to sustainability goals, procurement teams struggle with
-          evaluating and tracking the environmental impact of their supplier relationships. There
-          was no standardized, user-friendly way to assess sustainability practices across diverse
-          suppliers and product categories.
+        <ul className="list-disc list-inside space-y-2 ml-4">
+          <li><b>5 industries,</b> and multiple categories to assess</li>
+          <li>Ability to <b>add new suppliers</b></li>
+          <li><b>Dashboard</b> for supplier's sustainability progress</li>
+          <li><b>Assessments</b> to score and rank suppliers</li>
+        </ul>
         </p>
-        <p>Research revealed several key challenges:</p>
+        {/* <p>Research revealed several key challenges:</p>
         <ul className="list-disc list-inside space-y-3 ml-4">
           <li>
             Sustainability data is scattered across multiple formats and sources, making assessment
@@ -42,8 +47,19 @@ export function SustainabilityTool() {
           <li>
             Reporting to stakeholders requires manual data compilation and analysis
           </li>
-        </ul>
+        </ul> */}
       </CaseStudySection>
+      
+      <CaseStudySection title="Client's Goal & Requirements">
+        <p>
+        <ul className="list-disc list-inside space-y-2 ml-4">
+          <li>To be a <b>responsible consumer of natural resources</b> so that they can incorporate cross industry best practice, 
+          standards ad principles in procurement process.</li>
+          <li>To <b>assess their IT hardware suppliers</b> across certifications, design principles, and material issues.</li>
+          <li><b>Assess the sustainability maturity</b> of their IT hardware suppliers.</li>
+        </ul>
+        </p>
+        </CaseStudySection>
 
       <FullWidthImage
         src="https://images.unsplash.com/photo-1582601231162-132ca60713d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwcmVzZWFyY2glMjBpbnRlcnZpZXd8ZW58MXx8fHwxNzY1Nzg1NTMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"

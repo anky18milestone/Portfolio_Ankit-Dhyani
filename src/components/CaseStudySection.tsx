@@ -1,9 +1,9 @@
+import React, { useRef, ReactNode } from 'react';
 import { motion, useInView } from 'motion/react';
-import { useRef, ReactNode } from 'react';
 
 interface CaseStudySectionProps {
   title: string;
-  children: ReactNode;
+  children?: ReactNode;
   className?: string;
 }
 
@@ -20,7 +20,7 @@ export function CaseStudySection({ title, children, className = '' }: CaseStudyS
       className={`mb-24 ${className}`}
     >
       <h2 className="text-3xl md:text-5xl tracking-tight mb-8">{title}</h2>
-      <div className="text-lg text-neutral-700 leading-relaxed space-y-6">{children}</div>
+      {children && <div className="text-lg text-neutral-700 leading-relaxed space-y-6">{children}</div>}
     </motion.section>
   );
 }

@@ -1,6 +1,6 @@
+import React, { useRef } from 'react';
 import { motion, useInView } from 'motion/react';
-import { useRef } from 'react';
-import { Mail, Phone, Linkedin, Github } from 'lucide-react';
+import { Mail, Phone, LinkedinIcon } from 'lucide-react';
 
 export function Contact() {
   const ref = useRef<HTMLDivElement>(null);
@@ -20,7 +20,7 @@ export function Contact() {
       href: 'tel:+917253971871',
     },
     {
-      icon: Linkedin,
+      icon: LinkedinIcon,
       label: 'LinkedIn',
       value: 'Connect on LinkedIn',
       href: 'https://www.linkedin.com/in/ankit-dhyani-47ba84134/',

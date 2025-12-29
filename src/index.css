@@ -221,7 +221,6 @@
   }
 
   img, svg, video, canvas, audio, iframe, embed, object {
-    vertical-align: middle;
     display: block;
   }
 
@@ -640,7 +639,7 @@
   }
 
   .list-inside {
-    list-style-position: inside;
+    list-style-position: unset;
   }
 
   .list-disc {
@@ -711,9 +710,9 @@
     border-radius: 3.40282e38px;
   }
 
-  .rounded-xl {
+  /* .rounded-xl {
     border-radius: calc(var(--radius)  + 4px);
-  }
+  } */
 
   .border {
     border-style: var(--tw-border-style);

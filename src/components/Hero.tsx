@@ -1,6 +1,6 @@
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { ArrowDown } from 'lucide-react';
-import { useRef } from 'react';
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -55,7 +55,7 @@ export function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
           onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
-          className="inline-flex items-center gap-2 px-8 py-4 bg-neutral-900 text-white rounded-full hover:bg-neutral-800 transition-colors"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-neutral-900 text-white rounded-full hover:bg-neutral-800 transition-colors cursor-pointer"
         >
           View My Work
           <ArrowDown className="w-4 h-4" />

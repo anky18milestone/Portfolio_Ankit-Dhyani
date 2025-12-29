@@ -1,3 +1,4 @@
+import React from 'react';
 import { CaseStudyLayout } from '../components/CaseStudyLayout';
 import { CaseStudySection, ImageGrid, FullWidthImage } from '../components/CaseStudySection';
 
