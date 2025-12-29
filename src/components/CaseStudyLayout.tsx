@@ -1,7 +1,7 @@
+import React, { ReactNode } from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { ReactNode } from 'react';
 
 interface CaseStudyLayoutProps {
   title: string;
@@ -11,7 +11,7 @@ interface CaseStudyLayoutProps {
   duration: string;
   tools: string[];
   heroImage: string;
-  children: ReactNode;
+  children?: ReactNode;
   nextProject?: {
     id: string;
     title: string;
@@ -43,7 +43,7 @@ export function CaseStudyLayout({
         transition={{ duration: 0.6 }}
         className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200"
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 py-6 flex justify-between items-center">
+        <div className="max-w-2xl mx-auto px-6 md:px-12 py-6 flex justify-between items-center">
           <Link
             to="/#work"
             className="flex items-center gap-2 text-neutral-600 hover:text-neutral-900 transition-colors"
@@ -132,7 +132,7 @@ export function CaseStudyLayout({
       {/* Project Navigation */}
       {(prevProject || nextProject) && (
         <div className="border-t border-neutral-200 py-20">
-          <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="max-w-2xl mx-auto px-6 md:px-12">
             <div className="flex justify-between items-center">
               {prevProject ? (
                 <Link

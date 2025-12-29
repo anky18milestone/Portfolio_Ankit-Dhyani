@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowUpRight } from 'lucide-react';
 import { useState } from 'react';
@@ -23,7 +24,7 @@ const projectLinks: Record<number, string> = {
   4: '/case-study/redesigning-zodiac',
 };
 
-export function ProjectCard({ project, index }: ProjectCardProps) {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -80,4 +81,4 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       </motion.div>
     </Link>
   );
-}
+};

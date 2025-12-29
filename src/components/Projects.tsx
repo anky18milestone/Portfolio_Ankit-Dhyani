@@ -1,10 +1,12 @@
+/// <reference path="../images.d.ts" />
+import React from 'react';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import { ProjectCard } from './ProjectCard';
-import bridgingTheGapsImg from 'figma:asset/fa057b9c87c7040c383227b2e97ebb20998d678a.png';
-import sustainabilityToolImg from 'figma:asset/3d20fe57458611e45c90ff892af5553e63cd21ff.png';
-import saathiImg from 'figma:asset/bdce910595044546d5961c305a6786ed2d8d6944.png';
-import zodiacImg from 'figma:asset/1c7aaef60583846b12eeccd0f843bc0da3b911ae.png';
+import bridgingTheGapsImg from '../assets/fa057b9c87c7040c383227b2e97ebb20998d678a.png';
+import sustainabilityToolImg from '../assets/3d20fe57458611e45c90ff892af5553e63cd21ff.png';
+import saathiImg from '../assets/bdce910595044546d5961c305a6786ed2d8d6944.png';
+import zodiacImg from '../assets/1c7aaef60583846b12eeccd0f843bc0da3b911ae.png';
 
 export function Projects() {
   const ref = useRef<HTMLDivElement>(null);
@@ -64,7 +66,9 @@ export function Projects() {
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {projects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
+            <React.Fragment key={project.id}>
+              <ProjectCard project={project} index={index} />
+            </React.Fragment>
           ))}
         </motion.div>
       </div>

@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import App from './App';
 import { BridgingTheGaps } from './pages/BridgingTheGaps';
 import { SustainabilityTool } from './pages/SustainabilityTool';
 import { Saathi } from './pages/Saathi';
 import { RedesigningZodiac } from './pages/RedesigningZodiac';
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();

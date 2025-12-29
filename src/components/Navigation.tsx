@@ -1,5 +1,5 @@
+import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
-import { useEffect, useState } from 'react';
 
 interface NavigationProps {
   activeSection: string;
@@ -40,7 +40,7 @@ export function Navigation({ activeSection }: NavigationProps) {
         isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
+      <div className="max-w-2xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
